@@ -23,5 +23,5 @@ print(texto.lower())
 print(texto.upper())
 
 #metodo .replace('palavra antiga' , 'palavra nova')
-frase = 'abujabu é ruim no forsaken'
-print(texto.replace('ruim','bom'))
+frase = 'abujabu é ruim no forsaken e o vininini e um coco'
+print(frase.replace('ruim','bom'))
