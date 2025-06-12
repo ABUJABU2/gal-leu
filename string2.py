@@ -1,0 +1,27 @@
+#criem uma variavel q chama texto
+#escrevam de maneira zuada :c00lKiDd     ->armazenem a frase na variavel
+texto= 'BlUeduD é melHor quE a Pr3tty pR1ncesS'
+#vou usar comando para mudar o texto da variável texto
+
+#método .cpitalize
+print(texto.capitalize())
+
+#metodo.title  ->coloca em maiuscula a primeira letra de toda palavra
+print(texto.title())
+
+#metodo .center(numero,caracter)
+nome = 'mafioso'
+print(nome.center(40, '-'))
+
+#metodo len(variaveltexto)   ->ele vai contarquantos caracterespossui uma frase
+print(len(texto))
+
+#metodo .lower()   ->ele vai colocar todas as letras em minusculas
+print(texto.lower())
+
+#metodo .upper()   ->ele vai deixar tudo em maiusculo
+print(texto.upper())
+
+#metodo .replace('palavra antiga' , 'palavra nova')
+frase = 'abujabu é ruim no forsaken'
+print(texto.replace('ruim','bom'))
