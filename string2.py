@@ -1,6 +1,6 @@
 #criem uma variavel q chama texto
 #escrevam de maneira zuada :c00lKiDd     ->armazenem a frase na variavel
-texto= 'BlUeduD é melHor quE a Pr3tty pR1ncesS'
+texto= '   ViniCius É uM toLeTe nO forSaKEN'
 #vou usar comando para mudar o texto da variável texto
 
 #método .cpitalize
@@ -25,3 +25,7 @@ print(texto.upper())
 #metodo .replace('palavra antiga' , 'palavra nova')
 frase = 'abujabu é ruim no forsaken e o vininini e um coco'
 print(frase.replace('ruim','bom'))
+#MÉTODO .strip ---->remove os expacos iniciais e os finais
+print(texto.strip())
+
+print(texto.lower().strip().replace('um tolete','o pior jogador'))
