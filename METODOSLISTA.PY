@@ -43,3 +43,7 @@ lista_frutas2 = ['banana' , 'maça','morango','banana','banana']
 quantas vezes a banana foi repetida? Use o .count para descobrir 💀💀💀'''
 
 print(lista_frutas2.count('banana'))
+
+'''---------------------------------------------------------------alua nova------------------------------------------------------------------------------------
+metodo len (nome da lista) ->retorna o tamanho da lista'''
+print (len(lista_frutas2))
