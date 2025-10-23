@@ -2,9 +2,9 @@ import random
 
 
 pokemons ={
-    'charmander':{'ataque':'bola de fogo', 'dano' : 35},
-    'squirtle':{'ataque':'jato de agua', 'dano' : 33},
-    'bulbassauro':{'ataque':'chicote de vinha', 'dano' : 31}
+    'charmander':{'ataque':'bola de fogo', 'dano' : 35,'vida':100},
+    'squirtle':{'ataque':'jato de agua', 'dano' : 33,'vida':100},
+    'bulbassauro':{'ataque':'chicote de vinha', 'dano' : 31,'vida':100}
 }
 
 jogador1 = ''
@@ -41,6 +41,35 @@ def dano_crítico (escolha):
     dano_crítico = pokemons[escolha]['dano'] * random.uniform(1,2)
     print(f' O dano crítico💯 do {escolha} é de {dano_crítico:.2f}')
     print('_'*40)
-dano_crítico(escolha1)
-dano_crítico(escolha2)
+    return dano_crítico
+
+d1 = dano_crítico(escolha1)
+d2 = dano_crítico(escolha2)
+
+#CRIEM UMA FUNCAO CHAMADA BATALHA (DANOCRITICO1 E DANOCRITICO2)
+#CADA POKEMON TEM 100 DE VIDA 
+#NO FINAL MOSTRE O VENCEDOR
+
+def batalha(d1 , d2):
+
+    vida1 = 100
+    vida2 = 100
+
+    print(f" UMA BATALHA SE INICIOU! ".center(40,'-'))
+    print('_'*40)
+
+    while vida1 or vida2 >0:
+        d1 = dano_crítico(escolha1)
+        d2 = dano_crítico(escolha2)
+    vida1-=0
+    vida2-=0 
+
+    escolha22= int (input('vez do jogador 1 (digite atacar para atacar)'))
+    if escolha22 == 'atacar' :
+        print(f'{pokemons[escolha1]} usou {pokemons[escolha1]['ataque']}')
+        escolha22 =vida1  - d2
+    escolha22= int (input('vez do jogador 2 (digite atacar para atacar)'))
+    if escolha22 == 'atacar' :
+        print(f'{pokemons[escolha2]} usou {pokemons[escolha2]['ataque']}')
+        escolha22 = vida2 - d1
     
